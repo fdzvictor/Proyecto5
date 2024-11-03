@@ -38,7 +38,7 @@ warnings.filterwarnings("ignore")
 
 
 #-----------------------------------------------------------------------------------
-def sacar_historico(url_sproducto,pos_tabla):
+def sacar_historico(url_sproducto:str,pos_tabla = 0):
 
 #Sacar histórico de precios, empecemos con una url: 
     
@@ -74,3 +74,26 @@ def sacar_historico(url_sproducto,pos_tabla):
 
 
 #-----------------------------------------------------------------------------------
+
+#Función para replacear comas por puntos, para poder pasar a float
+def eliminar_comas(x):
+    return x.replace(",",".")
+
+#------------------------------------------------------------------------------------
+
+
+# Función para eliminar puntos
+def eliminar_puntos(x):
+    return x.replace(".", "")
+
+
+#------------------------------------------------------------------------------------
+#Función que calcula el número más cercano al valor objetivo de una lista de valores 
+
+def acercarse (objetivo:int, lista_de_precios:list):
+    numerito = []
+    for i in lista_de_precios:
+       i = int(i)
+       numerito.append(abs(objetivo-(i)))
+
+       return min(numerito)
