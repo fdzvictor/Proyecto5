@@ -3,6 +3,24 @@
 ## Descripción del Proyecto
 Este proyecto tiene como objetivo analizar el mercado de coches en España, tanto en términos de matriculaciones históricas como en el contexto del mercado de segunda mano. Utilizando varias técnicas de scraping y APIs, hemos recopilado y analizado datos de diversas fuentes, incluyendo Wallapop, Datosmacro y la Dirección General de Tráfico (DGT), para crear una base de datos completa de los modelos de coches más populares en el país. Con estos datos, se han llevado a cabo análisis de estacionalidad y de las características del mercado de segunda mano.
 
+## Estructura del Proyecto
+
+La estructura del proyecto está organizada de la siguiente manera:
+
+├── Datos/CSVs/ # Carpeta con los archivos de datos en formato CSV. 
+└── Dfs coches totales # CSV con datos consolidados de coches.
+│  
+├── Notebooks/ # Carpeta con Jupyter Notebooks para el análisis y presentación. 
+│ 
+├── src/ # Carpeta de scripts Python para análisis y conexión a la base de datos. 
+│
+└──  Script de EDA (Análisis Exploratorio de Datos) y configuración de conexión. 
+├── .gitignore # Archivo que define los archivos a ignorar en el repositorio. 
+├── Presentación Proyecto 5.pptx # Presentación en PowerPoint del proyecto. 
+└── Presentacion # Notebook con el análisis y resultados del proyecto. 
+└── README.md # Descripción del proyecto, con instrucciones de uso y estructura.
+
+
 ## Fuentes de Datos
 1. **API de Wallapop**: Obtenemos información de Wallapop para realizar un análisis de precios y disponibilidad de coches en el mercado de segunda mano (http://api.wallapop.com/api/v3/general/search). 
 2. **Datosmacro**: Se ha scrapeado la tabla de matriculaciones históricas en España, una fuente clave para conocer la evolución de la demanda de diferentes modelos
