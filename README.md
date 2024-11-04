@@ -8,6 +8,7 @@ Este proyecto tiene como objetivo analizar el mercado de coches en España, tant
 La estructura del proyecto está organizada de la siguiente manera:
 
 ├── Datos/CSVs/ # Carpeta con los archivos de datos en formato CSV. 
+
 └── Dfs coches totales # CSV con datos consolidados de coches.
 
 ├── Notebooks/ # Carpeta con Jupyter Notebooks para el análisis y presentación. 
