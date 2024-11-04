@@ -153,6 +153,8 @@ def wallapop_coche (keywords, precio_max, latitud = 40.450381, longitud = -3.518
     for i in dc_wallapop["search_objects"]:
       lista_pais.append(list(i["location"].values())[-1])
 
+  
+
     #Sacamos fecha
     lista_fecha = []
     for i in dc_wallapop["search_objects"]:
@@ -162,6 +164,7 @@ def wallapop_coche (keywords, precio_max, latitud = 40.450381, longitud = -3.518
     df_wallapop = pd.DataFrame(list(zip(lista_nombres,lista_precios,lista_localiz,lista_postal,lista_fecha,lista_links)), 
                            columns = ["Modelo","Precio","Localización","Código_postal","Fecha","Link_wallapop"])
 
+    df_wallapop["Denominación"] = keywords
     #limpiamos df
     df_wallapop.drop_duplicates(inplace=True)
     df_wallapop["Link_wallapop"].astype(str)
