@@ -4,9 +4,11 @@
 Este proyecto tiene como objetivo analizar el mercado de coches en España, tanto en términos de matriculaciones históricas como en el contexto del mercado de segunda mano. Utilizando varias técnicas de scraping y APIs, hemos recopilado y analizado datos de diversas fuentes, incluyendo Wallapop, Datosmacro y la Dirección General de Tráfico (DGT), para crear una base de datos completa de los modelos de coches más populares en el país. Con estos datos, se han llevado a cabo análisis de estacionalidad y de las características del mercado de segunda mano.
 
 ## Fuentes de Datos
-1. **API de Wallapop**: Obtenemos información de Wallapop para realizar un análisis de precios y disponibilidad de coches en el mercado de segunda mano.
-2. **Datosmacro**: Se ha scrapeado la tabla de matriculaciones históricas en España, una fuente clave para conocer la evolución de la demanda de diferentes modelos.
+1. **API de Wallapop**: Obtenemos información de Wallapop para realizar un análisis de precios y disponibilidad de coches en el mercado de segunda mano (http://api.wallapop.com/api/v3/general/search). 
+2. **Datosmacro**: Se ha scrapeado la tabla de matriculaciones históricas en España, una fuente clave para conocer la evolución de la demanda de diferentes modelos
+ (https://datosmacro.expansion.com/negocios/matriculaciones-vehiculos/espana?anio=2021).
 3. **Dirección General de Tráfico (DGT)**: Usamos web scraping para acceder a los microdatos del parque móvil en 2023, permitiendo un análisis detallado de los modelos más populares en circulación.
+ ("https://www.dgt.es/inicio/")
 
 ## Tecnologías y Librerías Utilizadas
 - **Python**: Lenguaje principal para el procesamiento y análisis de datos.
@@ -26,7 +28,7 @@ Este proyecto tiene como objetivo analizar el mercado de coches en España, tant
 
 4. **Creación de Base de Datos**: Se organizó toda la información en una base de datos en PostgreSQL, donde se estructuraron las tablas para realizar consultas de los modelos más populares y sus características en el mercado de segunda mano.
 
-5. **Análisis de Estacionalidad**: Utilizando los datos de Wallapop, se realizó un análisis estacional para observar las fluctuaciones de precio y disponibilidad de los modelos en función de la época del año, así como otros detalles relevantes del mercado de segunda mano.
+5. **Análisis de Estacionalidad**: Utilizando los datos de Wallapop y Datosmacro, se realizó un análisis estacional para observar las fluctuaciones de precio y disponibilidad de los modelos en función de la época del año, así como otros detalles relevantes del mercado de segunda mano.
 
 ## Resultados
 El análisis permitió extraer conclusiones sobre:
@@ -39,3 +41,10 @@ El análisis permitió extraer conclusiones sobre:
    ```bash
    git clone https://github.com/tuusuario/tu-repositorio.git
    cd tu-repositorio
+
+## NEXT STEPS:
+
+En un futuro un análisis más extenso del mercado sería adecuado, ampliando la búsqueda a otros modelos.
+Una mejor conexión de bases de datos sería adecuado
+Un análisis más en profundidad de los datos
+
