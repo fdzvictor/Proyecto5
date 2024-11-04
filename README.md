@@ -9,15 +9,19 @@ La estructura del proyecto está organizada de la siguiente manera:
 
 ├── Datos/CSVs/ # Carpeta con los archivos de datos en formato CSV. 
 └── Dfs coches totales # CSV con datos consolidados de coches.
-│  
+
 ├── Notebooks/ # Carpeta con Jupyter Notebooks para el análisis y presentación. 
-│ 
+
 ├── src/ # Carpeta de scripts Python para análisis y conexión a la base de datos. 
-│
+
 └──  Script de EDA (Análisis Exploratorio de Datos) y configuración de conexión. 
+
 ├── .gitignore # Archivo que define los archivos a ignorar en el repositorio. 
+
 ├── Presentación Proyecto 5.pptx # Presentación en PowerPoint del proyecto. 
+
 └── Presentacion # Notebook con el análisis y resultados del proyecto. 
+
 └── README.md # Descripción del proyecto, con instrucciones de uso y estructura.
 
 
